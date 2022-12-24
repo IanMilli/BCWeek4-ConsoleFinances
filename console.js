@@ -203,7 +203,27 @@ console.log("Number of Months", numberOfMonths);
 //});
 //console.log(result2);
 const sum = finances.reduce( (partial_sum, a) => partial_sum + a[1], 0 ) ; 
- console.log("Total of number =", sum); 
+ console.log("  net total amount of Profit/Losses =", sum); 
 
+
+
+
+
+
+ //A "duplicate" question asked how to do this for a two-dimensional array, so this is a simple adaptation to answer that question. (The difference is only the six characters [2], 0, which finds the third item in each subarray and passes an initial value of zero):
+ 
+ //const twoDimensionalArray = [
+   //[10, 10, 1],
+   //[10, 10, 2],
+   //[10, 10, 3],
+ //];
+ //const sum = twoDimensionalArray.reduce( (partial_sum, a) => partial_sum + a[2], 0 ) ; 
+ //console.log(sum); // 6
+ //
  //solution found at https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers?page=2&tab=scoredesc#tab-top
  //answer by cat
+ //the average of the changes in profit/losses over the entire period
+
+
+
+ 
