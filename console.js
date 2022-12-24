@@ -96,12 +96,11 @@ let finances = [
 //               is the money made or loss that month.
 
 // This project was initiated for us by the instructor provided for loop :
-//  for (let i = 0; i < finances.length; i++) {
-//  const [date, amount] = finances[i];
-// }
-//console.log(date);
-//console.log(amount);
-
+ // for (let i = 0; i < finances.length; i++) {
+ //const [date, amount] = finances[i];{
+  
+ 
+ 
 //  This can be explained by understanding that the for loop has four main parts
 //a) for which is the initiation command of the loop
 //b) (let i =0; which is the condition)
@@ -178,33 +177,33 @@ console.log("Number of Months", numberOfMonths);
 //Find the net total amount of Profit/Losses over the entire period.
 // For this i need to create a for loop to again split the data sets then use the sum function to add
 // up the numbers in the nested arrays - see below
-
-    let sum=0
-    
-    
-for (let i = 0; i < finances.length; i++) {
-    const [date, amount] = finances[i];
-
-
-   let  sum = [amount].reduce(function (a, b) {
-        return a + b;
-      }, 0);
+//let result = finances.reduce(function (p, c) {
+  //  p.push(c.reduce(function (a, b) {
+    //    a.dates.push(b.date);
+      //  a.amounts.push(b.amount);
+        //return a;
+    //}, { dates: [], amounts: [] }));
+    //return p;
 
 
-      
-      
-      const array_amount1 = [sum]; 
-      function sumArray(amount1) {
-        
-        let sum1 = 0;
-      
-        for (let i = 0; i < amount1.length; i += 1) {
-          sum1 += amount1[i];
-        }
-        
-        return sum1;
-        
-      }
-      
-      console.log(sumArray);
-}
+ //let result2 = 0
+
+ //function sumArray(amounts) {
+   //     for (
+     //       let
+       //     index = 0,              // The iterator - where in the array you start (think 0=ground floor of a building)
+         //   length = amounts.length,  // Cache the array length
+           // sum = 0;                // The total amount
+            //index < length;         // The "for"-loop condition (loop continues as long as the answer is true)
+            //sum += amounts[index++]   // Add number on each iteration (after each loop the result is added to the previous answer)
+        //);
+        //return sum;
+    //}
+
+//});
+//console.log(result2);
+const sum = finances.reduce( (partial_sum, a) => partial_sum + a[1], 0 ) ; 
+ console.log("Total of number =", sum); 
+
+ //solution found at https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers?page=2&tab=scoredesc#tab-top
+ //answer by cat
