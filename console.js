@@ -123,7 +123,8 @@ var finances = [
     };
     
     month(finances);
-    console.log(months); // Output: 12
+    console.log(months); 
+    document.write(months);// Output: 12
            //this returns the same answer of 86.
     // Explanation of process:
     //*have defined a variable of month and equaled it to the function 'getElementByID' 
