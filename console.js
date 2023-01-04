@@ -204,4 +204,23 @@ document.write ("Number of Months", numberOfMonths);
 //working as hoped.
 
 // End result : the total number of months being analysed =86
-    
+
+// this task was completed with the assistance of my tutorial with David E
+
+
+
+//Task -2b) Find the net total amount of Profit/Losses over the entire period.
+
+// this question stumped me and i had to do a lot of research to understand it
+
+// in the end i found the answer on stack overflow and was able to adapt a solution there to this problem
+
+// url of research -https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers/55200281#55200281 -answer by cat
+
+//to answer the task before us i therefore used the reduce method and created a constant variable.
+
+const Net_Total = finances.reduce (partial_sum, a) => partial_sum + a[1], 0) ;
+
+// i then equal the variable Net_Total to a method that seeks only the 2nd item in each subarray and passes an initial value of 0
+console.log ("Net Total of Profit/Losses =", Net_Total);
+document.write ("Net Total of Profit/Losses =", Net_Total);
