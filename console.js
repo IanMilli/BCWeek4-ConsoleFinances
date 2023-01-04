@@ -86,9 +86,7 @@ let finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
-    // First we want to separate the two types of data in the provided "finances array" 
-    //- the string element of "date" and the number element of "money earned/lost"
-    //to do this we use the following for loop:
+    // To complete the following challlenge requirements we have been provided with the following for loop which operates by itterating along the length of the finances array of arrays to produce the data in the console log to demonstrate to us how to seperate the string element of date and the number element of amount into different variables.
     
     for (let i = 0; i < finances.length; i++) {
         const [date, amount] = finances[i];
@@ -97,8 +95,26 @@ let finances = [
         
     }
     
-    //next we have been asked to find the total number of months being considered in the "finances" array.
-    // to count the number of elements in an array we can use the array.length() method.
+    //the challenge to be completed is Unit 4 Challenge: Console Finances
+
+//Overview
+
+//In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.(this refers to the array of arrays data set "finances" 1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
+
+
+// Task 1
+
+//Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.Copy the starter files in your local git repository.
+
+
+// this has been done, 
+
+//URL for github repository is: https://github.com/IanMilli/BCWeek4-ConsoleFinances
+
+
+   
+
+
     
     arrayLength = finances.length;
     console.log (finances.length);
