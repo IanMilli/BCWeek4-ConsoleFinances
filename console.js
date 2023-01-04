@@ -189,7 +189,7 @@ for (let i = 0; i < finances.length; i++) {
     }
 }
 console.log("Number of Months", numberOfMonths);
-document.write ("Number of Months", numberOfMonths);
+document.write("Number of Months", numberOfMonths);
 
 
 // Here i have created a global variable and set it to equal 0
@@ -222,8 +222,8 @@ document.write ("Number of Months", numberOfMonths);
 const Net_Total = finances.reduce (partial_sum, a) => partial_sum + a[1], 0) ;
 
 // i then equal the variable Net_Total to a method that seeks only the 2nd item in each subarray and passes an initial value of 0
-console.log ("Net Total of Profit/Losses =", Net_Total);
-document.write ("Net Total of Profit/Losses =", Net_Total);
+console.log("Net Total of Profit/Losses =", Net_Total);
+document.write("Net Total of Profit/Losses =", Net_Total);
 
 //Task 2c) Find The average of the changes in Profit/Losses over the entire period.
   
@@ -251,12 +251,12 @@ cde.decrease = (cde.decrease[1] > change) ? cde.decrease : b[0],
 return solution
 });
 
-console.log ("Average of Changes to Profit/Losses",solution.average;
-console.log ("The greatest increase in profits",solution.increase);
-console.log ("The greatest decrease in profits",solution.decrease);
+console.log("Average of Changes to Profit/Losses",solution.average;
+console.log("The greatest increase in profits",solution.increase);
+console.log("The greatest decrease in profits",solution.decrease);
 
-document.write ("Average of Changes to Profit/Losses",solution.average;
-document.write ("The greatest increase in profits",solution.increase);
-document.write ("The greatest decrease in profits",solution.decrease);
+document.write("Average of Changes to Profit/Losses",solution.average;
+document.write("The greatest increase in profits",solution.increase);
+document.write("The greatest decrease in profits",solution.decrease);
 
 
