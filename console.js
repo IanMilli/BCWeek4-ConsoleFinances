@@ -224,3 +224,5 @@ const Net_Total = finances.reduce (partial_sum, a) => partial_sum + a[1], 0) ;
 // i then equal the variable Net_Total to a method that seeks only the 2nd item in each subarray and passes an initial value of 0
 console.log ("Net Total of Profit/Losses =", Net_Total);
 document.write ("Net Total of Profit/Losses =", Net_Total);
+
+//Task 2c) 
