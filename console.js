@@ -188,8 +188,10 @@ for (let i = 0; i < finances.length; i++) {
         numberOfMonths++
     }
 }
-console.log("Number of Months", numberOfMonths);
-document.write("Number of Months", numberOfMonths);
+console.log("Number of Months =", numberOfMonths);
+
+document.getElementById("months").innerHTML = numberOfMonths;
+
 
 
 // Here i have created a global variable and set it to equal 0
