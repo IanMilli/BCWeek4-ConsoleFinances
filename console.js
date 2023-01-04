@@ -189,6 +189,8 @@ for (let i = 0; i < finances.length; i++) {
     }
 }
 console.log("Number of Months", numberOfMonths);
+document.write ("Number of Months", numberOfMonths);
+
 
 // Here i have created a global variable and set it to equal 0
 // i have then used the for loop that we were provided to seperate the two sets of data we are being asked to analyse
@@ -201,5 +203,5 @@ console.log("Number of Months", numberOfMonths);
 //give the correct answer I deleted a months data set and this then resolved the console log to 85 proving this for loop is
 //working as hoped.
 
-// End result : he total number of months being analysed =86
+// End result : the total number of months being analysed =86
     
