@@ -225,4 +225,38 @@ const Net_Total = finances.reduce (partial_sum, a) => partial_sum + a[1], 0) ;
 console.log ("Net Total of Profit/Losses =", Net_Total);
 document.write ("Net Total of Profit/Losses =", Net_Total);
 
-//Task 2c) 
+//Task 2c) Find The average of the changes in Profit/Losses over the entire period.
+  
+
+// Task 2d)The greatest increase in profits (date and amount) over the entire period.
+
+
+
+// Task 2e) The greatest decrease in losses (date and amount) over the entire period.
+
+
+//to complete these three tasks i discovered there was multiple solutions, one using the array method and forming a object, another using a combination of map filter and reduce 
+
+//in the end i went with the reduce method and adjusted the example found at https://stackoverflow.com/questions/74407724/sales-data-js (answer by EssXTee)to resolve thes tasks
+
+let solution = finances.reduce ((a,b,i) => {
+let cde = (i > 1) ? a : {sumChange : 0, lastMonth : a[1], increase: a, decrease: a},
+change = b[1] - cde.lastMonth
+
+cde.sumChange += change
+cde.lastMonth = b[1]
+cde.average = cde.sumChange/ i
+cde.increase = (cde.increase[1] > change) ? cde.increase : b[0], 
+cde.decrease = (cde.decrease[1] > change) ? cde.decrease : b[0], 
+return solution
+});
+
+console.log ("Average of Changes to Profit/Losses",solution.average;
+console.log ("The greatest increase in profits",solution.increase);
+console.log ("The greatest decrease in profits",solution.decrease);
+
+document.write ("Average of Changes to Profit/Losses",solution.average;
+document.write ("The greatest increase in profits",solution.increase);
+document.write ("The greatest decrease in profits",solution.decrease);
+
+
