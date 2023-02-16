@@ -51,10 +51,6 @@ width: 100%;
     background-color: rgb(122, 206, 229);
     background-size: cover;
   }
-.cardMain {
-    background-image: url("./images/backgroundInput.jpg");
-    background-size: cover;
-}
 
 
   .result_container {
