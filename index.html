@@ -5,29 +5,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Financial Data Analysis</title>
+  <!--links for bootstrap 4.3.1 css-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--link to local css file-->
   <link rel="stylesheet" type="text/css" href="./assets/console.css" />
 </head>
 
 <body>
   <header>
-    <h1>Console Finances Analysis</h1>
+    <!--title of page for ui-->
+    <h1>Financial Data Analysis</h1>
+    <!--text to describe how to use the page to reveal provided data and analysis carried out by jva script page-->
     <h2 class="text-center">Open the inspection panel by pressing "ctrl-shift-i" or right click using your mouse and
       select "inspect"
       to check the console log </h2>
     <h3 class="text-center">or review the financial analysis of a set financial array of data by clicking on the buttons
       below</h3>
-    <h3 class="text-center"> see the data analysed and the final anaylsis</h3>
+    <h3 class="text-center"> see the data analyzed and the final analysis</h3>
   </header>
+  <!--jumbotron to set a card centrally within -->
   <div class="jumbotron jumbotron-fluid ">
     <div class="container">
       <div class="card text-center cardMain">
         <div class="card-body">
+          <!--button to connect with the modal that will contain the provided data to be analyzed-->
           <button type="button" class="btn mr-5 responsiveContent" data-toggle="modal" data-target="#dataModal">
             Financial Data
           </button>
+          <!--butoon to connect with the modal that will contain the analysis carried out by the javascript functions-->
           <button type="button" class="btn ml-5 responsiveContent" data-toggle="modal" data-target="#financialModal">
             Click to Reveal Analysis of Financial Data
           </button>
@@ -40,45 +47,47 @@
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">financial Data Array to Be Analysed
+        <!--header of modal-->
+        <h4 class="modal-header">Financial Data Array to Be Analyzed</h4>
+          <!--h4 class for data array finances content to be printed to-->
           <h4 class="modal-title" id="financialModalLabel"></h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
+        
         <div class="modal-body text-center">
-          <p  style="max-width: 25vh;" id="dataArray"></p>
+          <h5 style="max-width: 25vh;" id="dataArray"></h5>
         </div>
         <div class="modal-footer">
+          <!--button to close the modal when not required-->
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-
-
-
   <!-- Modal to display financial analysis -->
   <div class="modal fade" id="financialModal" tabindex="-1" role="dialog" aria-labelledby="financialModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
+          <!--title of modal-->
           <h4 class="modal-title text-center" id="financialModalLabel">Console Financial Analysis</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body text-center">
-          <p id="numberOfMonths"></p>
+          <!--h4 classes to link the results of the data analysis carried out by the javascript to-->
+          <h4>Number Of Months:</h4><h5 id="numberOfMonths"></h5>
           <!--add id to link result for number of months-->
-          <p id="netTotal"></p>
+          <h4>Net Total of Profit/Losses:  </h4><h5 id="netTotal"></h5>
           <!--add id to link net total of profit/losses-->
-          <p id="averageChange"></p>
+         <h4>Average change:  </h4> <h5 id="averageChange"></h5>
           <!--add link to average change of profit and loss-->
-          <p id="greatestIncrease"></p>
+          <h4>Greatest increase Month to Month: </h4><h5 id="greatestIncrease"></h5>
           <!--add link to show the month with the greatest increase-->
-          <p id="greatestDecrease"></p>
+          <h4>Greatest decrease Month to Month:  </h4><h5 id="greatestDecrease"></h5>
           <!--add link to show the month with the greatest decrease-->
         </div>
         <div class="modal-footer">
@@ -87,19 +96,20 @@
       </div>
     </div>
   </div>
-  <footer>
+  <!--fotter section of page-->
+  <footer class>
     <div class="text-center text-primary p-3" id="copyright-link">© 2023 Copyright:
+      <!--link name of author to main github page-->
       <a class="text-primnary" href="https://github.com/IanMilli"> Ian
         Millichamp</a>
     </div>
+    <!--image to display authors logo-->
     <img class=" rounded-5 d-block mx-auto" src="./assets/logo2.png"
       style="height:25vh;width:auto;border-radius: 20%;"><img>
   </footer>
-
-
-
+  <!--link to local js file-->
   <script src="./assets/console.js"></script>
-
+  <!--link to bootstrap js files-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -109,7 +119,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>

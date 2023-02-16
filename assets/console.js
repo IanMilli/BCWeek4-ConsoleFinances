@@ -259,7 +259,7 @@ let finances = [
   
   
   
-  // compile data results (guidance from Laura Cole Instructor)
+  // compile data results to make it easier to review in console log (guidance from Laura Cole Instructor)
 let analysis = 'Financial Analysis' +
 '\n--------------------' +
 '\nTotal months: ' + numberOfMonths +
@@ -269,7 +269,7 @@ let analysis = 'Financial Analysis' +
 '\nGreatest decrease: ' + solution.decrease;
 
 console.log(analysis);
-
+//attach results to specfic ids in html to allow results to be printed to the user interface - set required variables first
 
 let numberOfMonthsEL = document.getElementById("numberOfMonths");
 let netTotalEL = document.getElementById("netTotal");
@@ -278,10 +278,10 @@ let greatestIncreaseEL = document.getElementById("greatestIncrease");
 let greatestDecreaseEL = document.getElementById("greatestDecrease");
 let dataArrayEl = document.getElementById("dataArray")
 
-numberOfMonthsEL.innerHTML = "Number Of Months:  " + numberOfMonths;
-netTotalEL.innerHTML = "Net Total of Profit/Losses:  " + netTotal ;
-averageChangeEL.innerHTML = "Average change:  " + solution.average;
-greatestIncreaseEL.innerHTML = "Greatest increase Month to Month:  " + solution.increase;
-greatestDecreaseEL.innerHTML = "Greatest decrease Month to Month:  " + solution.decrease;
+numberOfMonthsEL.innerHTML =  numberOfMonths;
+netTotalEL.innerHTML = netTotal ;
+averageChangeEL.innerHTML =  solution.average;
+greatestIncreaseEL.innerHTML =  solution.increase;
+greatestDecreaseEL.innerHTML = solution.decrease;
 dataArrayEl.innerHTML = finances;
 
