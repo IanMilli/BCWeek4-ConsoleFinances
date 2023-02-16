@@ -109,7 +109,7 @@ let finances = [
   
   // this has been done,
   
-  //URL for github repository is: https://github.com/IanMilli/BCWeek4-ConsoleFinances
+  //URL for github repository is: https://ianmilli.github.io/Financial-Data-Analysis/
   
   
   // Task 2 -Write the code to produce a webapplication that can identify the following when applied to the provided data set.
