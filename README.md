@@ -11,6 +11,7 @@ This project is to provide an analysis of provided financial data that is arrang
 * The Month that has the greatest Profit from the previous month.
 * The Month that has the greatest Loss from the previous month.
 
+Technologies used include javaScript,HTML, CSS, Flexbox, Bootstrap
 
 ## Table of Contents 
 
@@ -37,7 +38,9 @@ Alternatively the user can open an inspection panel by either pressing "ctrl, sh
 
 ## Screenshots
 
-
+* screenshot of ui page: [screenshot 1](https://github.com/IanMilli/Financial-Data-Analysis/blob/main/assets/screenshots/welcome%20page.png).
+* screenshot of modal displaying provided data: [screenshot 2](https://github.com/IanMilli/Financial-Data-Analysis/blob/main/assets/screenshots/modal%20displaying%20financial%20data.png).
+* screenshot of modal displaying financial analysis carried out by javaScript: [screenshot 3](https://github.com/IanMilli/Financial-Data-Analysis/blob/main/assets/screenshots/modal%20to%20display%20financial%20analysis.png).
     
     
 ## Credits
