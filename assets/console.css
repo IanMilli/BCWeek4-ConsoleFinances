@@ -12,7 +12,7 @@ h1 {font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 h2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.8vw;
+    font-size: 2vw;
 
 }
 h3 {font-family: Georgia, 'Times New Roman', Times, serif;
@@ -22,12 +22,12 @@ h3 {font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 h4 {font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8vw;
+    font-size: 2vw;
     color: navy;
 
 }
-h5 {font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.3vw;
+h5 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5vw;
     color: black;
 
 }
